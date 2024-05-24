@@ -3,6 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import './partials/header.css';
 
+body {
+    background-color: #FAFAFA;
+    margin: 0;
+}
+
 h1 {
     font-family: "Julius Sans One", sans-serif;
     font-weight: 400;
@@ -25,4 +30,12 @@ p {
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
+}
+
+main {
+    min-height: 200vh;
+    background-image: url('../images/fifthElement/Vector.svg');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: top;
 }
