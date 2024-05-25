@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import './partials/header.css';
+/*oskar font */
+
 
 h1 {
     font-family: "Julius Sans One", sans-serif;
@@ -24,5 +26,472 @@ p {
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
-      "wdth" 100;
+      "width" 100;
+}
+
+.titel{
+  font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: light;
+    font-size: 24px;
+  
+}
+.item{
+  width: 100px;
+}
+
+/**roshni code productpage**/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.roshni-main-productpage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 2px;  
+  align-items: center;
+  margin-top: 20vh;
+}
+
+.filtrer {
+  display: flex;
+  justify-content: center;
+}
+/* /fifth element in the background*/
+ /* .roshni-product-bg {
+  width: 1430px;
+  height: 3005px;
+  z-index: -1;
+  position: absolute;
+}  */
+
+.h1-stole {
+  color: black;
+  margin-top: 5vh;
+  margin-bottom: 5vh; 
+
+}
+/* name on product */
+.titelroshni{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color:#706B5C;
+  
+}
+.prisroshni{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  color:#706B5C;
+  
+}
+/*menubar with categories*/
+.navroshni {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+ 
+ 
+
+}
+/*an unorded-list of categories inside menubar*/
+.navroshni ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800; 
+
+
+}
+  
+.navroshni > ul > li {
+  background-color: white;
+  width: 174px;
+  height: 32px;
+  border: #4E4E4E solid 1px;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  margin: 10px;
+  position: relative;
+  
+
+}
+
+.sub-menu {
+  display: none;
+  background-color: #4E4E4E;
+ border-color: #4E4E4E 1px solid;
+color: white;
+  position: absolute;
+  font-weight: 300;
+  
+}
+
+.navroshni ul li:hover .sub-menu {
+  display: inline-block;
+
+}
+.sub-menu ul li{
+  width: 174px;
+  height: 32px;
+  font-weight: 100;
+ 
+}
+
+
+#items{
+  margin-top: 10vh;
+  background-color: white;
+  display: inline-grid; 
+  justify-content: center;
+  grid-template-columns: 1fr; 
+  grid-template-rows: 300px; 
+  column-gap: 32px;
+  row-gap: 64px;
+  width: 100;
+
+
+}
+#itemstwo
+{
+  margin-top: 10vh;
+  background-color: white;
+  display: inline-grid; 
+  justify-content: center;
+  grid-template-columns: 1fr; 
+  grid-template-rows: 300px; 
+  column-gap: 32px;
+  row-gap: 64px;
+  width: 100;
+
+
+}
+.item{
+
+  background-color: none;
+}
+.itemroshni >img{
+  padding: 0;
+}
+/*chairpicture*/
+.itemroshni >img:first-child{
+  width: 193px;
+  height: 257px;
+}
+.itemroshni> section{
+  display: flex;
+  justify-content: space-between;
+  align-items: bottom;
+  width: 100%;
+  background-color: #4E4E4E;
+  padding: 0;
+  margin: 0;
+ 
+
+}
+.itemroshni> section> div{
+
+background-color: aqua;
+
+ 
+
+}
+
+
+/*div with icons*/
+.nofillroshni{
+  width: 16px;
+  height: 16px;
+  
+
+}
+#bagroshni{
+  width: 16px;
+  height: 22px;
+}
+
+#more-products-btn  {
+  background-color: #523D3E;
+  color:white;
+  
+  font-family: "Archivo", sans-serif;
+  font-weight: 800; 
+  height: 40px;
+  font-size: xx-small;
+  display: flex;
+  text-align: center;
+justify-content: center;
+align-items: center;
+width: 300px;
+border:none;
+border-radius: 0;
+margin-top: 32px;
+margin-bottom: 32px;
+}
+
+.btn-text{
+  font-family: "Archivo", sans-serif;
+  font-weight: 800; 
+border:none;
+  font-size: xx-small;
+}
+
+
+
+.inspiration-background{
+  background-image: url("../images/productimg/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+width: 100%;
+height: 300px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+
+#whiteBox{
+height: 32px;
+width: 33px;
+background-color: #EFEEE3;
+border-radius: 0%;
+border:none;
+
+opacity: 100%;
+}
+#whiteBox:hover{
+  opacity: 50%;
+}
+/*go to chair and table-btns*/
+.whitebtn{
+  width: 230px;
+  border: 1px solid white;
+  height: 70px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 800; 
+  font-size: small;
+  color:white;
+  background-color: transparent;
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.whitebtn>img{
+ margin-left: 10px;
+ width: 40px;
+}
+
+.whitebtn:hover{
+ opacity: 50%;
+ }
+
+
+ #white-chair-card{
+  width: 330px;
+  height: 407px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  align-items: center;
+  z-index: 1;
+  flex-direction: column;
+  padding: 12px;
+  margin-top: 10px;
+  display: none;
+ }
+ #white-chair-card-is-active{
+  
+  display: flex;
+
+ }
+
+ #white-chair-card img{
+ width: 100%;
+
+ }
+ #white-chair-card>section{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+ margin-bottom: 0;
+ padding-bottom: 0;
+  padding-top: 10px;
+  
+
+ }
+
+/*inspiration-card-icons*/
+#white-chair-card > section > div> img{
+ width: 20px;
+ 
+  
+ }
+/*title on insp card*/
+.title-insp-card{
+  font-family: "Open Sans", sans-serif;
+   
+    font-weight: light;
+    font-size: 15px;
+
+
+}
+
+/*price on insp card*/
+.pris-insp-card{
+
+  font-family: "Open Sans", sans-serif;
+   
+  font-weight: light;
+  font-size: 12px;
+  font-weight: 700;
+
+}
+ 
+ footer{
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  padding-top: 0;
+  display: flex;
+  flex-direction: row;
+ 
+ }
+ footer  p{
+  color:white;
+  font-family: "Archivo", sans-serif;
+font-size: 8px;
+font-weight: 700;
+}
+
+ footer>section{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+ }
+ footer > section > div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ 
+ }
+
+.social-icons-footer{
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+}
+.flag{
+  width: 32px;
+  height: 23px;
+  margin: 10px;
+}
+.mobilepay{
+width: 23px;
+height: 23px;
+}
+
+.telefon{
+  height: 23px;
+  height: 23px;
+margin-left: 10px;
+margin-right: 5px;
+
+}
+.visa{
+  width: 25px;
+  height: 10px;
+}
+
+.aabningstider{
+  
+}
+
+
+@media  (min-width: 700px) {
+ 
+  .navroshni > ul{
+    display: flex;
+    flex-direction: row;
+
+  }
+  #items{
+    margin-top: 10vh;
+    background-color: white;
+    display: inline-grid; 
+    justify-content: center;
+    grid-template-columns:50% 50%; 
+    grid-template-rows: 300px; 
+    column-gap: 32px;
+    row-gap: 32px;
+
+  
+  
+  }
+  #itemstwo{
+    margin-top: 10vh;
+    background-color: white;
+    display: inline-grid; 
+    justify-content: left;
+    grid-template-columns:50% 50%; 
+    grid-template-rows: 300px; 
+    column-gap: 32px;
+    row-gap: 32px;
+    width: 532px;
+    height: 300px;
+   
+  }
+  #itemstwo >img:first-child{
+    height: 100px;
+    width: 100px;
+  }
+  
+
+}
+
+@media  (min-width: 900px){
+
+  #items{
+    margin-top: 10vh;
+    background-color: white;
+    display: inline-grid; 
+    justify-content: center;
+    grid-template-columns: 33% 33% 33%; 
+    grid-template-rows: 300px; 
+    column-gap: 32px;
+    row-gap: 32px;
+
+  
+  
+  }
+  footer p{
+    font-size: 12px;
+  }
+
 }
