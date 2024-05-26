@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import './partials/header.css';
 @import './partials/homepage.css';
+@import './partials/inspiration.css';
 
 body {
     background-color: #FAFAFA;
@@ -19,6 +20,15 @@ h1 {
     font-family: "Julius Sans One", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.archivo {
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
 }
 
 h2 {

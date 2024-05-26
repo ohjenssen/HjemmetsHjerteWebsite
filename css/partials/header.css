@@ -31,7 +31,7 @@
 }
 
 .is-scrolling {
-    background-color: #FAFAFA;
+    /* background-color: #FAFAFA; */
     transition: 0.4s;
     margin: 0;
     padding: 0;
