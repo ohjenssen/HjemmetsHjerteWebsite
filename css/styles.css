@@ -4,6 +4,7 @@
 @import './partials/header.css';
 @import './partials/homepage.css';
 @import './partials/inspiration.css';
+@import './partials/om_oss.css';
 
 body {
     background-color: #FAFAFA;
