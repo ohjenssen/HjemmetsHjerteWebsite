@@ -8,7 +8,7 @@
 @import './partials/leveringsmetoder.css';
 
 body {
-    background-color: #FAFAFA;
+    background-color: white;
     margin: 0;
 }
 
@@ -210,7 +210,6 @@ ul li:hover{
   grid-template-rows: 300px; 
   column-gap: 32px;
   row-gap: 64px;
-background-color: aqua;
 
 
 }
