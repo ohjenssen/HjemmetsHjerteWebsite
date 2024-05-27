@@ -5,6 +5,7 @@
 @import './partials/homepage.css';
 @import './partials/inspiration.css';
 @import './partials/om_oss.css';
+@import './partials/leveringsmetoder.css';
 
 body {
     background-color: #FAFAFA;

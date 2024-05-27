@@ -1,0 +1,19 @@
+.delivery {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.delivery-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: 32px;
+}
+
+.delivery-steps {
+    display: flex;
+    align-items: center;
+}
