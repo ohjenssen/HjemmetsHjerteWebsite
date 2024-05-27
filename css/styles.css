@@ -62,12 +62,12 @@ p {
   justify-content: center;
 }
 /* /fifth element in the background*/
- /* .roshni-product-bg {
+  .roshni-product-bg {
   width: 1430px;
   height: 3005px;
   z-index: -1;
   position: absolute;
-}  */
+}  
 
 .h1-stole {
   color: black;
@@ -81,9 +81,10 @@ p {
   font-weight: 100;
   font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 12px;
-  color:#706B5C;
+  color:#523D3E;
+  color:black;
   
 }
 .prisroshni{
@@ -91,14 +92,30 @@ p {
   font-weight: 100;
   font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 10px;
   color:#706B5C;
   
 }
+.year{
+  font-size: 8px;
+  font-family: "Open Sans", "sans-serif";
+  color: #523D3E;
+  opacity: 60%;
+  
+  
+}
+.normal{
+  color: #523D3E;
+
+}
+.new{
+  color:green;
+}
+
 /*menubar with categories*/
 .navroshni {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   text-align: center;
   width: 100%;
@@ -106,10 +123,11 @@ p {
  
 
 }
+
 /*an unorded-list of categories inside menubar*/
 .navroshni ul {
   list-style-type: none;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -123,39 +141,43 @@ p {
   
 .navroshni > ul > li {
   background-color: white;
-  width: 174px;
-  height: 32px;
-  border: #4E4E4E solid 1px;
+  width: 174px;  border: #4E4E4E solid 1px;
   justify-content: center;
-  display: inline-flex;
+  display:inline-flex;
   align-items: center;
   margin: 10px;
   position: relative;
+  padding: 10px;
   
 
 }
 
 .sub-menu {
   display: none;
-  background-color: #4E4E4E;
- border-color: #4E4E4E 1px solid;
-color: white;
-  position: absolute;
+  background-color: white;
+color: black;
   font-weight: 300;
+  border: black solid 1px;
+  margin-top: 15px;
   
 }
 
 .navroshni ul li:hover .sub-menu {
-  display: inline-block;
+  display:block;
+  position: absolute;
 
 }
 .sub-menu ul li{
   width: 174px;
   height: 32px;
   font-weight: 100;
+  padding: 10px;
  
 }
-
+ul li:hover{
+  background-color: #4E4E4E;
+  color:white;
+}
 
 #items{
   margin-top: 10vh;
@@ -166,7 +188,7 @@ color: white;
   grid-template-rows: 300px; 
   column-gap: 32px;
   row-gap: 64px;
-  width: 100;
+background-color: aqua;
 
 
 }
@@ -201,17 +223,14 @@ color: white;
   justify-content: space-between;
   align-items: bottom;
   width: 100%;
-  background-color: #4E4E4E;
   padding: 0;
   margin: 0;
  
 
 }
-.itemroshni> section> div{
+.itemroshni> img:first-child{
 
-background-color: aqua;
-
- 
+padding: 10px; 
 
 }
 
@@ -321,6 +340,7 @@ opacity: 100%;
   padding: 12px;
   margin-top: 10px;
   display: none;
+  position: absolute;
  }
  #white-chair-card-is-active{
   
@@ -408,8 +428,8 @@ font-weight: 700;
   margin: 10px;
 }
 .flag{
-  width: 32px;
-  height: 23px;
+  width: 22px;
+  height: 13px;
   margin: 10px;
 }
 .mobilepay{
@@ -426,11 +446,13 @@ margin-right: 5px;
 }
 .visa{
   width: 25px;
-  height: 10px;
+  height: 
 }
-
-.aabningstider{
-  
+.flagdiv{
+  width: fit-content;
+  display: flex;
+  justify-content: right;
+  padding: 5px;
 }
 
 
@@ -471,8 +493,27 @@ margin-right: 5px;
     height: 100px;
     width: 100px;
   }
+  .inspiration-background{
+    width: 100%;
+    height: 600px;
+  }
+  .visa{
+    width: 110px;
+    height: 23px;
+  }
+  .mobilepay{
+    width: 30.87px;
+    height: 35.99px;
+    margin-left: 10px;
+  }
+.flagdiv{
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  padding: 10px;
+  margin-right: 50%;
   
-
+}
 }
 
 @media  (min-width: 900px){
@@ -490,8 +531,15 @@ margin-right: 5px;
   
   
   }
+  footer{
+    height: 200px;
+    background-color: black;
+  }
   footer p{
     font-size: 12px;
+   
   }
 
 }
+
+
