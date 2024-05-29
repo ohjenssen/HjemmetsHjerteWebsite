@@ -40,6 +40,7 @@ h2 {
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
+      color:#523D3E;
 }
 
 p {
@@ -467,7 +468,7 @@ margin-right: 5px;
 }
 .visa{
   width: 25px;
-  height: 
+   
 }
 .flagdiv{
   width: fit-content;
@@ -475,6 +476,518 @@ margin-right: 5px;
   justify-content: right;
   padding: 5px;
 }
+
+/**STYLES FOR STOLHMTL**/
+
+.roshni-slider-main{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+.roshni-slider{
+  width: 100%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  align-items: center;
+  margin-top: 25vh;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: inset -10px 30px 50px gray;
+
+
+}
+.two-rows{
+  display: flex;
+justify-content: center;
+ flex-direction: row; 
+}
+.product-information{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  margin-top: 13px;
+
+
+
+}
+.put-in-basket{
+  margin-top: 32px;
+  height: 32px;
+  width: 100%;
+  background-color: #523D3E ;
+  border:#523D3E solid 1px;
+  border-radius: 0%;
+  color:white;
+  box-shadow: 0px 0px 15px 0px #B2B1B2;
+}
+
+.put-in-basket:hover{
+ 
+  background-color: #251c1c;
+color:gray;
+
+}
+
+.add-wish{
+  margin-top: 10px;
+  height: 32px;
+  width: 100%;
+  background-color: transparent;
+  border:#523D3E solid 1px;
+  border-radius: 0%;
+
+}
+
+.add-wish:hover{
+  margin-top: 10px;
+  height: 32px;
+  width: 100%;
+  background-color: transparent;
+  border:#523D3E solid 1px;
+  border-radius: 0%;
+  color:gray;
+
+  box-shadow: inset  0px 0px 5px 0px #dbdbdb;
+
+
+}
+
+.picture-slider{
+width: 50%;
+  display: inline-flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  
+ 
+}
+
+
+.product-information > p{
+  margin-top: 16px;
+  font-size: 12px;
+  margin-bottom: 32px;
+  
+}
+
+.product-details{
+  width: 100%;
+  display: flex;
+
+  justify-content: space-between;
+
+
+}
+.product-btns{
+
+  height: 20%;
+  width: 100%;
+}
+
+
+
+
+.product-details ul:first-child{
+  list-style: none;
+  text-align: left;
+
+  font-family: "Archivo", sans-serif;
+  font-size: 12px;
+  color: #B2B1B2;
+
+}
+.product-details ul:last-child{
+  list-style: none;
+  text-align: right;
+
+  font-family: "Archivo", sans-serif;
+  font-size: 12px;
+  color: #B2B1B2;
+
+}
+
+.picture-slider img{
+  display: none;
+}
+
+.picture-slider img:first-child{
+  display: block;
+  width: 200px;
+
+}
+
+
+.det-andre-har-kigget-paa{
+  display: block;
+  flex-direction: column;
+
+text-align: center;
+height: 500px;
+align-items: center;
+}
+.det-andre-har-kigget-paa h1{
+ margin-top: 32px;
+ margin-bottom: 0px;
+ padding-bottom: 0;
+
+}
+#cards{
+  width: 100%;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% ;
+
+}
+
+.card{
+  width:100px;
+  height: 100px;
+  background-color: white;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 40px;
+  margin: 32px;
+
+}
+
+.cardimg{
+width: 100%;
+}
+.cardinfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card>div:first-child{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.produkt-titel-card{
+  display: flex;
+  flex-direction: column;
+  
+}
+.cardbag{
+  width: 22px;
+  height: 22px;
+
+}
+.nofillcard{
+  width: 22px;
+  height: 22px;
+}
+
+.titelcard{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color:#523D3E;
+  color:black;
+}
+
+.priscard{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  color:#706B5C;
+
+}
+
+
+
+
+.bottoonsss{
+  margin-top: 20px;
+
+}
+.bottonsss>button{
+  border-color: ;
+}
+.bottoonsss> button:last-child{
+  width: 32px;
+  height: 32px;
+  margin: 2px;
+  display: inline-flex;
+  background-image: url("../images/productimg/minimork.png");
+}
+.bottoonsss> button:last-child{
+  width: 42px;
+  height: 42px;
+  margin: 2px;
+  display: inline-flex;
+  background-image: url("../images/productimg/ministol.png");
+background-size: cover;
+background-position: center;
+border-radius: none;
+border: 0.5px solid black;
+}
+
+
+.bottoonsss> button:nth-child(2){
+  width: 42px;
+  height: 42px;
+  margin: 2px;
+  display: inline-flex;
+  background-image: url("../images/productimg/minimork.png");
+  background-size: cover;
+background-position: center;
+border-radius: none;
+border: 0.5px solid black;
+
+}
+.bottoonsss> button:first-child{
+  width: 42px;
+  height: 42px;
+  margin: 2px;
+  display: inline-flex;
+  background-image: url("../images/productimg/minigeleander.png");
+  background-size: cover;
+background-position: center;
+border-radius: none;
+border: 0.5px solid black;
+
+  
+}
+.arrowroshni{
+  width: 32px;
+  margin-left: 8px;
+}
+.arrow-roshni-p{
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.seemore{
+  width: 50%;
+  height: 32px;
+
+  margin-top: 0;
+  padding-top: 0;
+  background-color: #523D3E;
+  color:white;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+
+
+.checkout{
+  padding: 15px;
+  margin-top: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FAFAFA;
+
+}
+.checkout h1{
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+.items-in-bag{
+  width: 100%;
+ 
+  
+  display: flex;
+
+}
+.item-in-bag{
+width: 150px;
+height: 200px;
+
+box-shadow: inset 1px 10px 10px 5px lightgray;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+margin-right: 10px;
+}
+/* the product picture within the div box */
+.item-in-bag>img{
+  width: 100%;
+  margin-top: 50px;
+}
+/*a box with the name+title+ remove+trashcan picture*/
+.item-in-bag-info{
+  width: 100px;
+  height: 200px;
+justify-content: space-between;
+  display: inline-flex;
+
+/  overflow: hidden;
+  flex-direction: column;
+  }
+  /*Margin beetween titel and price in */
+  .item-in-bag-info p{
+ margin-top: 5px;
+ margin-bottom: 5px;
+    }
+  .item-in-bag-info>div{
+    width: 100%;
+    height: 40%;
+  }
+  .item-in-bag-info>div:first-child{
+    margin-top: 50px;
+  }
+  .item-in-bag-info>div:last-child{
+    width: 100%;
+
+    height: 40%;
+    display: flex;
+    align-items: bottom;
+   
+  }
+  .item-in-bag-info>div:last-child>img{
+    width: 15px;
+    height: 15px;
+    margin-top: 40%;
+  }
+/*Text over trashcan*/
+  .remove{
+    height: 10px;
+    width: 10px;
+    margin-top: 40%;
+    display: flex;
+    border: none;
+    background-color: transparent;
+    color:gray;
+    font-size: 10px;
+  }
+  .remove:hover{
+    
+    color:blue;
+  }
+  
+.arrowdown{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: none;
+
+}
+.arrowdown>p{
+  margin-top: 100px;
+  color:gray;
+  display: none;
+}
+/*the div around the whole name and adress inputs*/
+.name-and-adress{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+padding-bottom: 35px;
+background-color: #251c1c;
+}
+#nameAndAdress{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+}
+/*the div inside "adresse og navn" with two input-f*/
+#two-input{
+width: 100%;
+background-color: blue;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+/*The two input "adresse" and "by"*/
+#two-input>div>input{
+  
+  width: 35vw;
+}
+/**/
+.input-container{
+  height: 25px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 10px;
+  border: #523D3E 1px solid;
+
+}
+#nameAndAdress>p, #kortopslysninger p, #nameAndAdress div>p, .container p {
+ 
+  font-family: "Archivo", "sans serif";
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 12px;
+    margin-top: 10px;
+}
+/*Two inputboxes in the center*/
+
+.titel-checkout{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: light;
+  font-size: 20px;
+  color:#706B5C;
+}
+
+.checkout>h2{
+margin-top: 10px;
+margin-bottom: 5px;
+}
+.leveringsmetode {
+  margin: 20px;
+}
+
+.kortopslysninger{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+
+
+#payment-options{
+  width: 250px;
+  height: 150px;
+}
+
+
+
+
+
+
+
 
 
 @media  (min-width: 700px) {
@@ -560,5 +1073,24 @@ margin-right: 5px;
     font-size: 12px;
    
   }
+
+  .two-rows{
+    width: 100%;
+  }
+  .product-information{
+    width: 30%;
+    margin-bottom: 32px;
+  }
+  .picture-slider{
+    width: 60%;
+  }
+  .picture-slider{
+    width: 60%;
+  }
+ #two-input > {
+  background-color: red;
+ }
+
+
 
 }
