@@ -441,3 +441,49 @@ darkOakBtn.addEventListener('click', () => {
 
 
 
+ 
+const div_cards = document.querySelector("#cards");
+
+let cards = [
+  {
+    name: "bord",
+    price: 2500,
+    image: "../images/productimg/browntable.png",
+    save: "../images/productimg/nofill.png",
+    putinbag: "../images/productimg/bag.png",
+  },
+  {
+    name: "redoakchair",
+    image: "../images/productimg/idunstol.png",
+    price: 1500,
+    save: "../images/productimg/nofill.png",
+    putinbag: "../images/productimg/bag.png",
+  },
+  {
+    name: "redoakchair",
+    image: "../images/productimg/idunstol.png",
+    price: 1500,
+    save: "../images/productimg/nofill.png",
+    putinbag: "../images/productimg/bag.png",
+  },
+];
+
+cards.forEach(card => {
+  const div_card = `
+    <div class="card">
+      <img class="cardimg" src="${card.image}" alt="">
+      <div class="cardinfo">
+        <div class="produkt-titel-card">
+          <p class="titelcard">${card.name}</p>
+          <p class="priscard">${card.price}</p>
+        </div>
+        <div>
+          <img class="nofillcard" src="${card.save}" alt="save">
+          <img class="cardbag" src="${card.putinbag}">
+        </div>
+      </div>
+    </div>
+  `;
+  div_cards.insertAdjacentHTML("afterbegin", div_card);
+ 
+});
