@@ -81,14 +81,15 @@ items.forEach(item => {
 
     const div_item = `
     <div class="itemroshni">
-      <img src="${item.image}" alt="${item.name}">
-      <section>
+    <a href='./stol.html'>
+      <img src="${item.image}" alt="${item.name}" class='item-img'>
+      <section class='item-section'>
         <div class="product-info-roshni">
           <p class="titelroshni">${item.name}</p>
           <p class="prisroshni">${item.price} kr;</p>
           <p class="year">${item.year} udgivelsesår</p>
 
-       
+    </a>
         </div>
         <div>
           <img class="nofillroshni" src="${item.save}" alt="save">
@@ -101,7 +102,8 @@ items.forEach(item => {
     div_items.insertAdjacentHTML("afterbegin", div_item);
 })
 
-const div_itemstwo =document.querySelector("#itemstwo")
+const div_itemstwo =document.querySelector("#itemstwo");
+
 let itemstwo = [
     {
         "name": "bord",
@@ -133,7 +135,8 @@ itemstwo.forEach(itemtwo =>{
           <img id="bagroshni" src="${itemtwo.putinbag}" alt="bag">
         </div>
       </section>
-    </div> ` 
+    </div> 
+    ` 
     div_itemstwo.insertAdjacentHTML("afterbegin", div_itemtwo);
 })
 const inspBtn = document.getElementById('whiteBox');
@@ -166,18 +169,23 @@ inspCard.style.display ='none';
       items.forEach(item => {
           const itemDiv = `
           <div class="itemroshni">
-            <img src="${item.image}" alt="${item.name}">
-            <section>
+          <a href='./stol.html'>
+            <img src="${item.image}" alt="${item.name}" class='item-img'>
+            <section class='item-section'>
               <div class="product-info-roshni">
                 <p class="titelroshni">${item.name}</p>
                 <p class="prisroshni">${item.price} kr;</p>
+                <p class="year">${item.year} udgivelsesår</p>
+      
+          </a>
               </div>
               <div>
                 <img class="nofillroshni" src="${item.save}" alt="save">
                 <img id="bagroshni" src="${item.putinbag}" alt="bag">
               </div>
             </section>
-          </div>`;
+          </div>
+          `;
           div_items.insertAdjacentHTML("beforeend", itemDiv);
       });
   });
@@ -195,24 +203,26 @@ inspCard.style.display ='none';
       items.forEach(item => {
           const itemDiv = `
           <div class="itemroshni">
-            <img src="${item.image}" alt="${item.name}">
-            <section>
+          <a href='./stol.html'>
+            <img src="${item.image}" alt="${item.name}" class='item-img'>
+            <section class='item-section'>
               <div class="product-info-roshni">
                 <p class="titelroshni">${item.name}</p>
                 <p class="prisroshni">${item.price} kr;</p>
+                <p class="year">${item.year} udgivelsesår</p>
+      
+          </a>
               </div>
               <div>
                 <img class="nofillroshni" src="${item.save}" alt="save">
                 <img id="bagroshni" src="${item.putinbag}" alt="bag">
               </div>
             </section>
-          </div>`;
+          </div>
+          `;
           div_items.insertAdjacentHTML("beforeend", itemDiv);
       });
-  });
-
-
-
+});
   
 //**Js for the udgivelses¨r first */
 const newBtn = document.querySelector("#newest");
@@ -227,20 +237,23 @@ newBtn.addEventListener('click', () => {
     items.forEach(item => {
         const itemDiv = `
         <div class="itemroshni">
-          <img src="${item.image}" alt="${item.name}">
-          <section>
+        <a href='./stol.html'>
+          <img src="${item.image}" alt="${item.name}" class='item-img'>
+          <section class='item-section'>
             <div class="product-info-roshni">
               <p class="titelroshni">${item.name}</p>
               <p class="prisroshni">${item.price} kr;</p>
-                        <p class="year ">${item.year} udgivelsesår</p>
-
+              <p class="year">${item.year} udgivelsesår</p>
+    
+        </a>
             </div>
             <div>
               <img class="nofillroshni" src="${item.save}" alt="save">
               <img id="bagroshni" src="${item.putinbag}" alt="bag">
             </div>
           </section>
-        </div>`;
+        </div>
+        `;
         div_items.insertAdjacentHTML("beforeend", itemDiv);
     });
 });
@@ -261,20 +274,23 @@ oldBtn.addEventListener('click', () => {
     
         const itemDiv = `
         <div class="itemroshni">
-          <img src="${item.image}" alt="${item.name}">
-          <section>
+        <a href='./stol.html'>
+          <img src="${item.image}" alt="${item.name}" class='item-img'>
+          <section class='item-section'>
             <div class="product-info-roshni">
               <p class="titelroshni">${item.name}</p>
               <p class="prisroshni">${item.price} kr;</p>
-             <p class="year">${item.year}(nyeste)udgivelsesår</p>
-
+              <p class="year">${item.year} udgivelsesår</p>
+    
+        </a>
             </div>
             <div>
               <img class="nofillroshni" src="${item.save}" alt="save">
               <img id="bagroshni" src="${item.putinbag}" alt="bag">
             </div>
           </section>
-        </div>`;
+        </div>
+        `;
         div_items.insertAdjacentHTML("beforeend", itemDiv);
         
     });
@@ -301,20 +317,22 @@ HenrikBtn.addEventListener('click', () => {
             itemDiv.className = 'item';
             itemDiv.innerHTML = `
             <div class="itemroshni">
-            <img src="${item.image}" alt="${item.name}">
-            <section>
-              <div class="product-info-roshni">
-                <p class="titelroshni">${item.name}</p>
-                <p class="prisroshni">${item.price} kr;</p>
-               <p class="year">${item.year}(nyeste)udgivelsesår</p>
-  
-              </div>
-              <div>
-                <img class="nofillroshni" src="${item.save}" alt="save">
-                <img id="bagroshni" src="${item.putinbag}" alt="bag">
-              </div>
-            </section>
-          </div>
+            <a href='./stol.html'>
+              <img src="${item.image}" alt="${item.name}" class='item-img'>
+              <section class='item-section'>
+                <div class="product-info-roshni">
+                  <p class="titelroshni">${item.name}</p>
+                  <p class="prisroshni">${item.price} kr;</p>
+                  <p class="year">${item.year} udgivelsesår</p>
+        
+            </a>
+                </div>
+                <div>
+                  <img class="nofillroshni" src="${item.save}" alt="save">
+                  <img id="bagroshni" src="${item.putinbag}" alt="bag">
+                </div>
+              </section>
+            </div>
             `;
             div_items.appendChild(itemDiv);
             div_items.style.width = "60%"; 
@@ -347,20 +365,23 @@ HHBtn.addEventListener('click', () => {
        const itemDiv = document.createElement('div');
             itemDiv.className = 'item';
             itemDiv.innerHTML = `
-                <div class="itemroshni">
-                    <img src="${item.image}" alt="${item.name}">
-                    <section>
-                        <div class="product-info-roshni">
-                            <p class="titelroshni">${item.name}</p>
-                            <p class="prisroshni">${item.price} kr;</p>
-                            <p class="year">${item.year}(nyeste)udgivelsesår</p>
-                        </div>
-                        <div>
-                            <img class="nofillroshni" src="${item.save}" alt="save">
-                            <img id="bagroshni" src="${item.putinbag}" alt="bag">
-                        </div>
-                    </section>
+            <div class="itemroshni">
+            <a href='./stol.html'>
+              <img src="${item.image}" alt="${item.name}" class='item-img'>
+              <section class='item-section'>
+                <div class="product-info-roshni">
+                  <p class="titelroshni">${item.name}</p>
+                  <p class="prisroshni">${item.price} kr;</p>
+                  <p class="year">${item.year} udgivelsesår</p>
+        
+            </a>
                 </div>
+                <div>
+                  <img class="nofillroshni" src="${item.save}" alt="save">
+                  <img id="bagroshni" src="${item.putinbag}" alt="bag">
+                </div>
+              </section>
+            </div>
             `;
             div_items.appendChild(itemDiv);
            
@@ -383,20 +404,23 @@ lightBtn.addEventListener('click', () => {
             const itemDiv = document.createElement('div');
             itemDiv.className = 'item';
             itemDiv.innerHTML = `
-                <div class="itemroshni">
-                    <img src="${item.image}" alt="${item.name}">
-                    <section>
-                        <div class="product-info-roshni">
-                            <p class="titelroshni">${item.name}</p>
-                            <p class="prisroshni">${item.price} kr;</p>
-                            <p class="year">${item.year}(nyeste)udgivelsesår</p>
-                        </div>
-                        <div>
-                            <img class="nofillroshni" src="${item.save}" alt="save">
-                            <img id="bagroshni" src="${item.putinbag}" alt="bag">
-                        </div>
-                    </section>
+            <div class="itemroshni">
+            <a href='./stol.html'>
+              <img src="${item.image}" alt="${item.name}" class='item-img'>
+              <section class='item-section'>
+                <div class="product-info-roshni">
+                  <p class="titelroshni">${item.name}</p>
+                  <p class="prisroshni">${item.price} kr;</p>
+                  <p class="year">${item.year} udgivelsesår</p>
+        
+            </a>
                 </div>
+                <div>
+                  <img class="nofillroshni" src="${item.save}" alt="save">
+                  <img id="bagroshni" src="${item.putinbag}" alt="bag">
+                </div>
+              </section>
+            </div>
             `;
             div_items.appendChild(itemDiv);
         }
@@ -419,20 +443,23 @@ darkOakBtn.addEventListener('click', () => {
             const itemDiv = document.createElement('div');
             itemDiv.className = 'item';
             itemDiv.innerHTML = `
-                <div class="itemroshni">
-                    <img src="${item.image}" alt="${item.name}">
-                    <section>
-                        <div class="product-info-roshni">
-                            <p class="titelroshni">${item.name}</p>
-                            <p class="prisroshni">${item.price} kr;</p>
-                            <p class="year">${item.year}(nyeste)udgivelsesår</p>
-                        </div>
-                        <div>
-                            <img class="nofillroshni" src="${item.save}" alt="save">
-                            <img id="bagroshni" src="${item.putinbag}" alt="bag">
-                        </div>
-                    </section>
+            <div class="itemroshni">
+            <a href='./stol.html'>
+              <img src="${item.image}" alt="${item.name}" class='item-img'>
+              <section class='item-section'>
+                <div class="product-info-roshni">
+                  <p class="titelroshni">${item.name}</p>
+                  <p class="prisroshni">${item.price} kr;</p>
+                  <p class="year">${item.year} udgivelsesår</p>
+        
+            </a>
                 </div>
+                <div>
+                  <img class="nofillroshni" src="${item.save}" alt="save">
+                  <img id="bagroshni" src="${item.putinbag}" alt="bag">
+                </div>
+              </section>
+            </div>
             `;
             div_items.appendChild(itemDiv);
         }

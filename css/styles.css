@@ -236,11 +236,13 @@ ul li:hover{
   padding: 0;
 }
 /*chairpicture*/
-.itemroshni >img:first-child{
+.item-img{
   width: 193px;
   height: 257px;
+  padding: 10px; 
+
 }
-.itemroshni> section{
+.item-section{
   display: flex;
   justify-content: space-between;
   align-items: bottom;
@@ -249,9 +251,6 @@ ul li:hover{
   margin: 0;
  
 
-}
-.itemroshni> img:first-child{
-    padding: 10px; 
 }
 
 /*div with icons*/
