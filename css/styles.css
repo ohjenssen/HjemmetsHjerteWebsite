@@ -6,6 +6,7 @@
 @import './partials/inspiration.css';
 @import './partials/om_oss.css';
 @import './partials/leveringsmetoder.css';
+@import './partials/kontakt.css';
 
 body {
     background-color: white;

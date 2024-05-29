@@ -1,5 +1,8 @@
-.delivery {
+.delivery-main {
     margin-top: 150px;
+}
+
+.delivery {
     display: flex;
     justify-content: center;
 }
@@ -9,11 +12,24 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 600px;
     margin: 32px;
 }
 
+.delivery-info h1, .delivery-info h2 {
+    margin-bottom: 20px;
+}
+
+.delivery-info-text {
+    margin-bottom: 20px;
+}
+
 .delivery-steps {
+    margin: 32px;
     display: flex;
     align-items: center;
+    flex-direction: column;
+}
+
+.step {
+    margin-bottom: 20px;
 }
