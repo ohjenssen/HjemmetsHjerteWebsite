@@ -44,7 +44,7 @@ let items = [
         "image" : "../images/productimg/lightlightchair.png",
         "save": "../images/productimg/nofill.png",
         "putinbag": "../images/productimg/bag.png",
-        "year":2008,
+        "year": 2008,
         "color":"light"
 
     },
@@ -122,21 +122,38 @@ let itemstwo = [
   
 ]
 itemstwo.forEach(itemtwo =>{
-    const div_itemtwo = `
-   <div class="itemroshni">
-      <img src="${itemtwo.image}" alt="${itemtwo.name}">
-      <section class="item-info">
-        <div class="product-info-roshni">
-          <p class="titelroshni">${itemtwo.name}</p>
-          <p class="prisroshni">${itemtwo.price} kr;</p>
+//     const div_itemtwo = `
+//    <div class="itemroshni">
+//       <img src="${itemtwo.image}" alt="${itemtwo.name}">
+//       <section class="item-info">
+//         <div class="product-info-roshni">
+//           <p class="titelroshni">${itemtwo.name}</p>
+//           <p class="prisroshni">${itemtwo.price} kr;</p>
+//         </div>
+//         <div>
+//           <img class="nofillroshni" src="${itemtwo.save}" alt="save">
+//           <img id="bagroshni" src="${itemtwo.putinbag}" alt="bag">
+//         </div>
+//       </section>
+//     </div> 
+//     ` 
+
+const div_itemtwo = `
+    <div class="itemoskar">
+        <img src="${itemtwo.image}" alt="${itemtwo.name}" class="itemoskar-img">
+        <div class="product-info-oskar">
+            <div>
+                <p class="titelroshni">${itemtwo.name}</p>
+                <p class="prisroshni">${itemtwo.price} kr;</p>
+                <p class="year">${itemtwo.year} udgivelsesår</p>
+            </div>
+            <div>
+                <img id="bagroshni" src="${itemtwo.putinbag}" alt="bag">
+                <img class="nofillroshni" src="${itemtwo.save}" alt="save">
+            </div>
         </div>
-        <div>
-          <img class="nofillroshni" src="${itemtwo.save}" alt="save">
-          <img id="bagroshni" src="${itemtwo.putinbag}" alt="bag">
-        </div>
-      </section>
-    </div> 
-    ` 
+    </div>
+`
     div_itemstwo.insertAdjacentHTML("afterbegin", div_itemtwo);
 })
 const inspBtn = document.getElementById('whiteBox');

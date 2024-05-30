@@ -228,10 +228,25 @@ ul li:hover{
   width: 100;
 } */
 
-/* #itemstwo {
-    background-color: blue;
+#itemstwo {
+    /* background-color: blue; */
     display: flex;
-} */
+    justify-content: space-around;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.itemoskar {
+    margin: 16px;
+}
+
+.itemoskar-img {
+    max-height: 250px;
+}
+
+.product-info-oskar {
+    display: flex;
+}
 
 .item{
 
@@ -795,7 +810,6 @@ border: 0.5px solid black;
 .seemore{
   width: 50%;
   height: 32px;
-
   margin-top: 0;
   padding-top: 0;
   background-color: #523D3E;
@@ -805,6 +819,7 @@ border: 0.5px solid black;
   justify-content: center;
   align-items: center;
   padding: 10px;
+  border: none;
 }
 
 
@@ -913,20 +928,47 @@ justify-content: space-between;
 }
 /*the div around the whole name and adress inputs*/
 .name-and-adress{
-  width:100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-padding-bottom: 35px;
-background-color: #251c1c;
+    /* width:100%; */
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+    /* background-color: #251c1c; */
 }
-#nameAndAdress{
+
+/* #nameAndAdress{
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 300px;
+} */
+
+#checkout-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 16px;
 }
+
+.input-container-checkout {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+.input-container-checkout input {
+    border: 0.5px solid black;
+    padding: 10px;
+}
+
+#city-and-postnumber-checkout {
+    display: flex;
+    justify-content: space-between;
+}
+
 /*the div inside "adresse og navn" with two input-f*/
 #two-input{
 width: 100%;
@@ -1021,7 +1063,7 @@ margin-bottom: 5px;
     row-gap: 32px;
   }
 
-  #itemstwo{
+  /* #itemstwo{
     margin-top: 10vh;
     background-color: white;
     display: inline-grid; 
@@ -1037,7 +1079,7 @@ margin-bottom: 5px;
   #itemstwo >img:first-child{
     height: 100px;
     width: 100px;
-  }
+  } */
 
   .inspiration-background{
     width: 100%;
