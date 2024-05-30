@@ -6,6 +6,7 @@
 @import './partials/inspiration.css';
 @import './partials/om_oss.css';
 @import './partials/leveringsmetoder.css';
+@import './partials/kontakt.css';
 
 body {
     background-color: white;
@@ -60,7 +61,7 @@ p {
   
 }
 .item{
-  width: 100px;
+  width: 200px;
 }
 
 /**roshni code productpage**/
@@ -214,8 +215,8 @@ ul li:hover{
 
 
 }
-#itemstwo
-{
+
+/* #itemstwo {
   margin-top: 10vh;
   background-color: white;
   display: inline-grid; 
@@ -225,9 +226,13 @@ ul li:hover{
   column-gap: 32px;
   row-gap: 64px;
   width: 100;
+} */
 
+/* #itemstwo {
+    background-color: blue;
+    display: flex;
+} */
 
-}
 .item{
 
   background-color: none;
@@ -1004,6 +1009,7 @@ margin-bottom: 5px;
     flex-direction: row;
 
   }
+
   #items{
     margin-top: 10vh;
     background-color: white;
@@ -1013,10 +1019,8 @@ margin-bottom: 5px;
     grid-template-rows: 300px; 
     column-gap: 32px;
     row-gap: 32px;
-
-  
-  
   }
+
   #itemstwo{
     margin-top: 10vh;
     background-color: white;
@@ -1034,6 +1038,7 @@ margin-bottom: 5px;
     height: 100px;
     width: 100px;
   }
+
   .inspiration-background{
     width: 100%;
     height: 600px;
@@ -1068,26 +1073,26 @@ margin-bottom: 5px;
     grid-template-rows: 300px; 
     column-gap: 32px;
     row-gap: 32px;
-
-  
-  
   }
+
   footer{
     height: 200px;
     background-color: black;
   }
+
   footer p{
-    font-size: 12px;
-   
+    font-size: 12px; 
   }
 
   .two-rows{
     width: 100%;
   }
+
   .product-information{
     width: 30%;
     margin-bottom: 32px;
   }
+  
   .picture-slider{
     width: 60%;
   }

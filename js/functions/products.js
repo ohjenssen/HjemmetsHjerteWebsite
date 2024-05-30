@@ -125,7 +125,7 @@ itemstwo.forEach(itemtwo =>{
     const div_itemtwo = `
    <div class="itemroshni">
       <img src="${itemtwo.image}" alt="${itemtwo.name}">
-      <section>
+      <section class="item-info">
         <div class="product-info-roshni">
           <p class="titelroshni">${itemtwo.name}</p>
           <p class="prisroshni">${itemtwo.price} kr;</p>

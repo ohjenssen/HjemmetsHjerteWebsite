@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/styles.css" rel="stylesheet">
     <title>Kontakt | Hjemmets Hjerte</title>
 </head>
 <body>
@@ -32,9 +33,33 @@
             <a href="./checkout.html">Checkout</a>
         </nav>
     </header>
-    
-    <main>
 
+    <main>
+        <section class="contact">
+            <div class="contact-info">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Cras tristique velit et nunc condimentum, ut tincidunt libero vulputate. 
+                    Mauris ultrices nibh semper lorem laoreet tempor. 
+                    Aenean sit amet sagittis leo, in pharetra nisl. 
+                    Mauris iaculis, nisl accumsan suscipit laoreet, ligula libero suscipit est, at condimentum tortor elit ut nunc.</p>
+            </div>
+
+            <form class="contact-form">
+                <div class="contact-input">
+                    <label for="input-name" class="archivo">Navn</label>
+                    <input type="text" name="input-name" id="input-name">
+                </div>
+                <div class="contact-input">
+                    <label for="input-email" class="archivo">Email</label>
+                    <input type="text" name="input-email" id="input-email">
+                </div>
+                <div class="contact-input">
+                    <label for="input-name" class="archivo">Spørgsmål</label>
+                    <textarea rows="10" name="input-message" id="input-message"></textarea>
+                </div>
+                <button class="archivo submit-btn">Send ind</button>
+            </form>
+        </section>
     </main>
 
     <footer>
@@ -71,5 +96,6 @@
             </div>
         </section>
     </footer>
+    <script src="../js/index.js" type="module"></script>
 </body>
 </html>

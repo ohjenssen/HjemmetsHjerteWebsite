@@ -13,7 +13,12 @@
     margin: 32px;
 }
 
-.delivery-steps {
+.delivery-info p, .delivery-info h1, .delivery-info div {
+    margin-top: 16px;
+}
+
+.delivery2 {
+    margin-top: 50px;
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
