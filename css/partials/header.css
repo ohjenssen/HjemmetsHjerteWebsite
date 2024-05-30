@@ -1,5 +1,5 @@
 .logo {
-    height: 100px;
+    height: 75px;
     margin: 16px 0px 16px 16px;
 }
 
@@ -28,10 +28,11 @@
 
 .navigation-icons {
     height: 12px;
+    color: black;
 }
 
 .is-scrolling {
-    /* background-color: #FAFAFA; */
+    background-color: white;
     transition: 0.4s;
     margin: 0;
     padding: 0;
@@ -83,7 +84,7 @@
     min-height: 100vh;
     display: block;
     z-index: 98;
-    background-color: #EFEEE3;
+    background-color: white;
     padding-top: 140px;
     transition: 0.4s;
     font-family: "Archivo";
@@ -102,7 +103,8 @@
     text-align: center;
     padding: 12px 16px;
     border: 0.5px solid #4E4E4E;
-    color: #4E4E4E;
+    color: white;
+    background-color: black;
     text-decoration: none;
     
 }
@@ -120,31 +122,32 @@
         display: flex;
         align-items: center;
         margin-right: 32px;
-        a {
-            color: #4E4E4E;
-            font-size: 12px;
-        }
+    }
+
+    .desktop-nav a {
+        font-size: 12px;
     }
 
     .hamburger {
         margin-right: 32px;
     }
 
-    .oskar-logo {
+    .logo {
         margin-left: 32px;
     }
 }
 
 @media(min-width: 1000px){
-    .oskar-logo {
+    .logo {
         margin-left: 64px;
     }
 
     .desktop-nav {
         margin-right: 64px;
-        a {
-            font-size: 16px;
-        }
+    }
+
+    .desktop-nav a {
+        font-size: 16px;
     }
 }
 
