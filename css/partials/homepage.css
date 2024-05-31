@@ -27,7 +27,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-image: url('../../images/fifthElement/fifthElement_inverted_mobile.svg');
+    /* background-image: url('../../images/fifthElement/fifthElement_inverted_mobile.svg'); */
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -61,7 +61,7 @@
     }
 
     .categories-oj {
-        background-image: url('../../images/fifthElement/fifthElement_inverted_desktop.svg');
+        /* background-image: url('../../images/fifthElement/fifthElement_inverted_desktop.svg'); */
         background-repeat: no-repeat;
     }
      
