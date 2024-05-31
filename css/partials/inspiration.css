@@ -55,8 +55,15 @@
     transition: 0.5s;
 }
 
-@media (min-width: 600px){
+.inspiration-btn {
+    padding: 10px 30px;
+    background: rgba(197, 197, 197, 0.5);
+    text-align: center;
+    border: 1.5px solid white;
+    margin-top: 32px;
+}
 
+@media (min-width: 900px){
     .inspiration-collection1-oj {
         flex-direction: row;
     }
@@ -93,6 +100,17 @@
         justify-content: center;
         align-items: center;
         /* text-align: center; */
+    }
+
+    .inspiration-column-text h1 {
+        margin-bottom: 32px;
+    }
+
+    .designer-oj {
+        /* text-wrap: nowrap; */
+        margin-top: 32px;
+        margin-bottom: 32px;
+        color: red;
     }
     
     .inspiration-column2-info {
