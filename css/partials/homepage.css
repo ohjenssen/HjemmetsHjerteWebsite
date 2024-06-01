@@ -17,10 +17,13 @@
     overflow: hidden;
     margin: 0px;
     padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
  
 #hero-video {
-    height: 600px;
+    height: 400px;
 }
 
 .categories-oj {
