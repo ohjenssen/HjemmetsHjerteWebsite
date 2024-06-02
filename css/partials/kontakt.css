@@ -24,6 +24,11 @@
     margin: 16px;
 }
 
+.contact-input input, .contact-input textarea {
+    border-radius: 0px;
+    border: 1px solid black;
+}
+
 .contact-info {
     width: 350px;
     margin: 16px;
